@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타일 매칭 퍼즐</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>타일 매칭 퍼즐</h1>
+    <div id="mode-selection">
+        <button onclick="setMode('heaven')">헤븐 모드</button>
+        <button onclick="setMode('easy')">이지 모드</button>
+        <button onclick="setMode('normal')">노말 모드</button>
+        <button onclick="setMode('hard')">하드 모드</button>
+        <button onclick="setMode('extreme')">익스트림 모드</button>
+        <button onclick="setMode('hell')">헬 모드</button>
+    </div>
+    <div id="game-info" style="display: none;">
+        <p>레벨: <span id="level">1</span></p>
+        <p>점수: <span id="score">0</span></p>
+        <p>시간: <span id="timer">60</span>초</p>
+    </div>
+    <div id="game-board"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
